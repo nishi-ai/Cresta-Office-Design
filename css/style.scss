@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@use "./scss/header";
+@use "./scss/variables";
+
+// common //
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: variables.$main-text-color;
+  font-family: variables.$main-font-familiy;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.section-wrapper {
+  padding: 100px 0px 70px;
+}
+
+.section-title {
+  max-width: 1000px;
+  color: variables.$main-color;
+  font-size: 6rem;
+  font-style: italic;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.section-title::after {
+  content: "";
+  display: inline-block;
+  background-color: variables.$main-color;
+  width: 200px;
+  height: 5px;
+  vertical-align: middle;
+  margin-left: 30px;
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.section-bottom {
+  min-width: 1200px;
+  margin: 0 auto;
+  font-size: 9rem;
+  opacity: 0.5;
+}
+
+.link-btn {
+  display: block;
+  width: 235px;
+  line-height: 60px;
+  margin: 0 auto;
+  background-color: variables.$link-button-color;
+  box-shadow: 0 0 6px #1b1310;
+  border-radius: 30px; // 50% of the height
+  text-align: center;
+  color: variables.$main-text-color;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
+}
