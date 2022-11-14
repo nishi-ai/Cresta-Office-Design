@@ -1,0 +1,14 @@
+@use "./variables";
+
+.bg-contact {
+  background-image: variables.$contact_bgi;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-text {
+  color: variables.$text-color-white;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
