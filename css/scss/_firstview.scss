@@ -4,7 +4,7 @@
   height: 100vh;
   min-height: 550px;
   position: relative; // for copy as absolute
-  background-image: url(../images/fv-bgi_01@2x.jpg);
+  background-image: variables.$firstview_bgi;
   background-size: cover;
   background-position: center;
 }

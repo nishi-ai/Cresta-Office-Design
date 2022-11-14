@@ -114,6 +114,37 @@
   margin-left: 20px;
 }
 
+.bg-works {
+  background-image: url(../images/works-bgi@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.works-list {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works-item {
+  width: 32%;
+  background-color: #fff;
+}
+.works-item a {
+  color: #171717;
+  text-decoration: none;
+}
+
+.works-list-text {
+  padding: 25px 20px;
+}
+
 html {
   font-size: 62.5%;
 }

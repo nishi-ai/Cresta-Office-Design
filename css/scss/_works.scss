@@ -1,0 +1,29 @@
+@use "./variables";
+
+.bg-works {
+  background-image: variables.$works_bgi;
+  background-size: cover;
+  background-position: center;
+}
+
+.works-list {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.works-item {
+  width: 32%; // from 1000px and use % to place them equally
+  background-color: variables.$text-color-white;
+
+  a {
+    color: variables.$text-color-black;
+    text-decoration: none;
+  }
+}
+
+.works-list-text {
+  padding: 25px 20px;
+}
