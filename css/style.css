@@ -21,7 +21,6 @@
           align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: beige;
 }
 
 .header a {
@@ -55,6 +54,64 @@
 
 .burger-btn {
   display: none;
+}
+
+.fv {
+  height: 100vh;
+  min-height: 550px;
+  position: relative;
+  background-image: url(../images/fv-bgi_01@2x.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-copy {
+  position: absolute;
+  left: 120px;
+  bottom: 177px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.en-copy {
+  font-size: 7rem;
+  margin-bottom: 31px;
+}
+
+.jp-copy {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.concept-lead {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+.concept-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 70px;
+}
+
+.concept-text {
+  max-width: 440px;
+  font-weight: bold;
+  line-height: 1.9;
+}
+
+.concept-img-wrapper {
+  width: 44%;
+  margin-left: 20px;
 }
 
 html {

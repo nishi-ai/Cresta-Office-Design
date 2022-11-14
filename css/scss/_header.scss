@@ -16,11 +16,10 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: beige; // temp
 }
 
 .header a {
-  color: variables.$link-a-color;
+  color: variables.$text-color-white;
   text-decoration: none;
   font-weight: bold;
   font-style: italic;
