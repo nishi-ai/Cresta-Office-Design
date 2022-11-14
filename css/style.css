@@ -145,6 +145,46 @@
   padding: 25px 20px;
 }
 
+.service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service-item {
+  width: 33.3%;
+}
+.service-item a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 320px;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 4rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.service-item a:hover {
+  background-color: rgba(40, 47, 53, 0.7);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-item.service1 {
+  background-image: url(../images/service-img01@2x.jpg);
+}
+
+.service-item.service2 {
+  background-image: url(../images/service-img02@2x.jpg);
+}
+
+.service-item.service3 {
+  background-image: url(../images/sevice-img03@2x.jpg);
+}
+
 html {
   font-size: 62.5%;
 }
