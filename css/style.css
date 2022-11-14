@@ -252,10 +252,14 @@ img {
 }
 
 .section-bottom {
-  min-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   font-size: 9rem;
-  opacity: 0.5;
+  opacity: 0.05;
+}
+
+.section-bottom.text-white {
+  opacity: 0.1;
 }
 
 .link-btn {
@@ -278,4 +282,16 @@ img {
   opacity: 0.7;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.section-title.text-white::after {
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
