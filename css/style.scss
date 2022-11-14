@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 @use "./scss/header";
+@use "./scss/firstview";
+@use "./scss/concept";
+@use "./scss/works";
 @use "./scss/variables";
 
 // common //
@@ -11,7 +14,7 @@ html {
 body {
   font-size: 1.6rem;
   letter-spacing: 0.05em;
-  color: variables.$main-text-color;
+  color: variables.$text-color-black;
   font-family: variables.$main-font-familiy;
 }
 
@@ -65,7 +68,7 @@ img {
   box-shadow: 0 0 6px #1b1310;
   border-radius: 30px; // 50% of the height
   text-align: center;
-  color: variables.$main-text-color;
+  color: variables.$text-color-black;
   font-weight: bold;
   text-decoration: none;
   transition: 0.3s;

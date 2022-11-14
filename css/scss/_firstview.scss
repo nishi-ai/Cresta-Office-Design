@@ -1,0 +1,28 @@
+@use "./variables";
+
+.fv {
+  height: 100vh;
+  min-height: 550px;
+  position: relative; // for copy as absolute
+  background-image: variables.$firstview_bgi;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-copy {
+  position: absolute;
+  left: 120px;
+  bottom: 177px;
+  color: variables.$text-color-white;
+  font-weight: bold;
+}
+
+.en-copy {
+  font-size: 7rem;
+  margin-bottom: 31px;
+}
+
+.jp-copy {
+  font-size: 4rem;
+  text-align: center;
+}

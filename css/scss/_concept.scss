@@ -1,0 +1,27 @@
+@use "./variables";
+
+.concept-lead {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.7;
+}
+
+.concept-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.concept-text {
+  max-width: 440px;
+  font-weight: bold;
+  line-height: 1.9;
+}
+
+.concept-img-wrapper {
+  width: 44%;
+  margin-left: 20px;
+}
