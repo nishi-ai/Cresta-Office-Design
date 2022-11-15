@@ -72,7 +72,7 @@ img {
   margin: 0 auto;
   background-color: variables.$link-button-color;
   box-shadow: 0 0 6px #1b1310;
-  border-radius: 30px; // 50% of the height
+  border-radius: 30px; // 50% of the height to make oval shape
   text-align: center;
   color: variables.$text-color-black;
   font-weight: bold;
@@ -95,4 +95,33 @@ img {
 
 .section-title.text-white::after {
   background-color: variables.$text-color-white;
+}
+
+// small screen
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 100px 0 40px;
+  }
+
+  .section-title {
+    padding: 0 4vw;
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
+  .section-title::after {
+    width: 90px;
+  }
+
+  .section-inner {
+    padding: 0 4vw;
+  }
+
+  .section-bottom {
+    font-size: 4rem;
+    padding: 0 4vw;
+  }
+
+  .link-btn {
+    margin-bottom: 40px;
+  }
 }

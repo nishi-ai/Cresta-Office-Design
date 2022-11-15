@@ -49,3 +49,16 @@
   font-size: 0.75rem;
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .works-list {
+    display: block;
+    margin-bottom: 80px;
+    padding: 0 5vw;
+  }
+
+  .works-item {
+    width: 100%; // from 1000px and use % to place them equally
+    margin: 0 auto 30px;
+  }
+}
