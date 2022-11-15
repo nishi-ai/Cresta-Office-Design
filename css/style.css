@@ -7,6 +7,17 @@
           box-sizing: border-box;
   z-index: 1;
   width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header.fixed {
+  position: fixed;
+  background-color: #282f35;
+  padding: 30px;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-inner {
@@ -96,6 +107,7 @@
   }
   .burger-btn .bar {
     display: block;
+    left: 0;
     width: 30px;
     height: 3px;
     background-color: #fff;
@@ -117,14 +129,45 @@
        -moz-appearance: none;
             appearance: none;
   }
+  .burger-btn .bar_top {
+    top: 9px;
+  }
+  .burger-btn .bar_mid {
+    top: 14px;
+  }
+  .burger-btn .bar_bottom {
+    bottom: 4px;
+  }
+  .burger-btn.active span:nth-child(1) {
+    -webkit-transform: translateY(15px) rotate(-315deg);
+    transform: translateY(15px) rotate(-315deg);
+  }
+  .burger-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .burger-btn.active span:nth-child(3) {
+    -webkit-transform: translateY(-7px) rotate(315deg);
+    transform: translateY(-7px) rotate(315deg);
+  }
+  .header-nav.active {
+    display: block;
+  }
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 .fv {
   height: 100vh;
   min-height: 550px;
   position: relative;
-  background-image: url(../images/fv-bgi_01@2x.jpg);
-  background-size: cover;
-  background-position: center;
+}
+
+.fv img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100vh;
+  min-height: 550px;
 }
 
 .main-copy {

@@ -4,9 +4,12 @@
   height: 100vh;
   min-height: 550px;
   position: relative; // for copy as absolute
-  background-image: variables.$firstview_bgi;
-  background-size: cover;
-  background-position: center;
+}
+
+.fv img {
+  object-fit: cover;
+  height: 100vh;
+  min-height: 550px;
 }
 
 .main-copy {
