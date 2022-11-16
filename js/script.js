@@ -1,28 +1,26 @@
-// sticky header
+// sticky header ----------------------------------------------
 const offset = window.pageYOffset;
 const windowWidth = window.innerWidth;
 const header = document.getElementsByClassName("header")[0];
 const firstViewHeight = document.getElementsByClassName("fv")[0].offsetHeight;
 
-// console.log("header", header);
-// console.log("offset", offset);
-// console.log("firstViewHeight", firstViewHeight);
+// CONCEPTセクション要素の上部の高さを取得
+let elem = document.querySelector(".target-element");
+let concept = elem.getBoundingClientRect();
+// 現在のページの高さを取得 fixed height since page refresh
+const currentWindowHeight = window.pageYOffset;
 
-window.addEventListener("scroll", (e) => {
-  e.preventDefault();
-  //   console.log("scrolling---");
-  if (windowWidth > 768) {
-    // console.log("width > 768---");
-    if (offset > firstViewHeight) {
-      //   console.log("higher now");
-      header.classList.add("fixed");
-    } else {
-      header.classList.remove("fixed");
-    }
+window.addEventListener("scroll", () => {
+  const scrollY = window.pageYOffset; // chaning value while scrolling
+  // if scrolling heigt reaches out to concept.top (+ current windowHeight)
+  if (scrollY > concept.top + currentWindowHeight) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
   }
 });
 
-// slider
+// slider　------------------------------------------------
 $(".slider").slick({
   autoplay: true,
   autoplaySpeed: 2000,
