@@ -402,6 +402,134 @@
   color: #282f35;
 }
 
+.page-title-wrapper {
+  height: 453px;
+  position: relative;
+  background-image: url(../images/contact-page-bgi@2x.jpg);
+}
+
+.page-title {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding-top: 186px;
+  color: #fff;
+}
+
+.page-title-bottom {
+  font-size: 9rem;
+  color: #fff;
+  opacity: 0.1;
+  margin: 20px 0 0 48px;
+}
+
+.form-wrapper {
+  padding: 100px 0 80px;
+}
+
+.form-list {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+}
+
+.form-item {
+  margin-bottom: 25px;
+}
+.form-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-text {
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  padding: 0 8px;
+  line-height: 30px;
+  border: 1px solid #141414;
+  width: 100%;
+}
+
+.textarea {
+  resize: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 170px;
+  padding: 0 8px;
+  line-height: 30px;
+  border: 1px solid #141414;
+  outline: none;
+  width: 100%;
+}
+
+.checkbox-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox-item {
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.checkbox-item label,
+.checkbox {
+  cursor: pointer;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: solid 1px #282f35;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.checkbox:checked {
+  background-color: #333;
+}
+
+.submit-btn {
+  display: block;
+  width: 235px;
+  line-height: 60px;
+  margin: 0 auto;
+  background-color: #f7d43f;
+  -webkit-box-shadow: 0 0 6px #1b1310;
+          box-shadow: 0 0 6px #1b1310;
+  border-radius: 30px;
+  text-align: center;
+  color: #171717;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+}
+.submit-btn:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .checkbox-list {
+    display: block;
+  }
+}
 html {
   font-size: 62.5%;
 }
