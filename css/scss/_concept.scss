@@ -24,4 +24,30 @@
 .concept-img-wrapper {
   width: 44%;
   margin-left: 50px;
+  box-shadow: 0 0 8px 4px #ccc;
+}
+
+.pc-screenBr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .concept-lead {
+    margin-bottom: 32px;
+    font-size: 2rem;
+  }
+
+  .concept-content {
+    display: block; // change to column
+    margin-bottom: 40px;
+  }
+
+  .concept-text {
+    margin-bottom: 30px;
+  }
+
+  .concept-img-wrapper {
+    width: 100%;
+    margin: 0;
+  }
 }

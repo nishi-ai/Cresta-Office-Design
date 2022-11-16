@@ -4,9 +4,12 @@
   height: 100vh;
   min-height: 550px;
   position: relative; // for copy as absolute
-  background-image: variables.$firstview_bgi;
-  background-size: cover;
-  background-position: center;
+}
+
+.fv img {
+  object-fit: cover;
+  height: 100vh;
+  min-height: 550px;
 }
 
 .main-copy {
@@ -25,4 +28,28 @@
 .jp-copy {
   font-size: 4rem;
   text-align: center;
+}
+
+.small-screenBr {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-copy {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); // put the copy in the middle
+  }
+
+  .en-copy {
+    font-size: 9.8vw;
+    white-space: nowrap; // remove a break
+  }
+  .jp-copy {
+    font-size: 8vw;
+  }
+
+  .small-screenBr {
+    display: block;
+  }
 }

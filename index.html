@@ -16,19 +16,23 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-inner">
-        <div class="site-title"><a href="./">Cresta Design</a></div>
+        <div class="site-title"><a href="#header">Cresta Design</a></div>
         <nav class="header-nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#!">Concept</a></li>
-            <li class="nav-item"><a href="#!">Service</a></li>
-            <li class="nav-item"><a href="#!">Works</a></li>
-            <li class="nav-item"><a href="./contact/index.html">Contact</a></li>
+            <li class="nav-item"><a href="#concept">Concept</a></li>
+            <li class="nav-item"><a href="#works">Works</a></li>
+            <li class="nav-item"><a href="#service">Service</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -40,28 +44,31 @@
       </div>
     </header>
     <!-- // header -->
+
     <!-- main -->
     <main>
       <!-- first view -->
       <div class="fv">
         <ul class="slider">
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
-          <li><img src="" alt="" /></li>
+          <li><img src="./images/fv-bgi_01@2x.jpg" alt="" /></li>
+          <li><img src="./images/fv-bgi_02@2x.jpg" alt="" /></li>
+          <li><img src="./images/fv-bgi_03@2x.jpg" alt="" /></li>
         </ul>
         <div class="main-copy">
           <p class="en-copy">Design for Smile.</p>
-          <p class="jp-copy">快適なオフィスをデザインする</p>
+          <p class="jp-copy">
+            快適なオフィスを<br class="small-screenBr" />デザインする
+          </p>
         </div>
       </div>
       <!-- // first view -->
 
       <!-- concept -->
-      <section class="section-wrapper">
+      <section class="section-wrapper target-element">
         <h2 class="section-title">CONCEPT</h2>
         <div class="section-inner">
           <p class="concept-lead">
-            “働きたくなる空間”をデザインすることで<br />
+            “働きたくなる空間”をデザインすることで<br class="pc-screenBr" />
             人々を幸せにする。
           </p>
           <div class="concept-content">
@@ -79,7 +86,7 @@
       <!-- // concept -->
 
       <!--  works -->
-      <section class="section-wrapper bg-works">
+      <section class="section-wrapper bg-works" id="works">
         <h2 class="section-title text-right text-white">WORKS</h2>
         <ul class="works-list">
           <li class="works-item">
@@ -131,7 +138,7 @@
       <!-- // works -->
 
       <!-- service -->
-      <section class="section-wrapper">
+      <section class="section-wrapper" id="service">
         <h2 class="section-title">SERVICE</h2>
         <ul class="service-list">
           <li class="service-item service1"><a href="#!">Hearing</a></li>
@@ -143,7 +150,7 @@
       <!-- // service -->
 
       <!-- contact -->
-      <section class="section-wrapper bg-contact">
+      <section class="section-wrapper bg-contact" id="contact">
         <h2 class="section-title text-right text-white">CONTACT</h2>
         <div class="section-inner">
           <p class="contact-text">お気軽にご相談ください。</p>
@@ -161,6 +168,8 @@
     </footer>
     <!-- // footer -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

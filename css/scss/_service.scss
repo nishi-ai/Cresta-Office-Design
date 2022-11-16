@@ -35,3 +35,19 @@
 .service-item.service3 {
   background-image: variables.$service3_bgi;
 }
+
+@media (max-width: 768px) {
+  .service-list {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .service-item {
+    width: 100%;
+    margin-bottom: 30px;
+
+    a {
+      line-height: 250px;
+    }
+  }
+}
