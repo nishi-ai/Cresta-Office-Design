@@ -1,0 +1,135 @@
+@use "./variables";
+
+.page-title-wrapper {
+  height: 453px;
+  position: relative;
+  background-image: variables.$contact-page_bgi;
+}
+
+.page-title {
+  font-size: 6rem;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding-top: 186px;
+  color: variables.$text-color-white;
+}
+
+.page-title-bottom {
+  font-size: 9rem;
+  color: variables.$text-color-white;
+  opacity: 0.1;
+  margin: 20px 0 0 48px;
+}
+
+.form-wrapper {
+  padding: 100px 0 80px;
+}
+
+.form-list {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  padding: 0 50px;
+}
+
+.form-item {
+  margin-bottom: 25px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+// input,
+// textarea {
+//   resize: none;
+//   appearance: none;
+//   -webkit-appearance: none;
+//   outline: none;
+//   border: 1px solid #141414;
+//   width: 100%;
+//   color: variable.$text-color-black;
+//   box-sizing: border-box;
+// }
+
+.input-text {
+  resize: none;
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0 8px;
+  line-height: 30px;
+  border: 1px solid #141414;
+  width: 100%;
+}
+
+.textarea {
+  resize: none;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 170px;
+  padding: 0 8px;
+  line-height: 30px;
+  border: 1px solid #141414;
+  outline: none;
+  width: 100%;
+}
+
+.checkbox-list {
+  display: flex;
+}
+
+.checkbox-item {
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.checkbox-item label,
+.checkbox {
+  cursor: pointer;
+}
+
+.checkbox {
+  appearance: none;
+  border: solid 1px variables.$main-color;
+  height: 10px;
+  width: 10px;
+  margin-right: 10px;
+}
+
+.checkbox:checked {
+  background-color: #333;
+}
+
+.submit-btn {
+  display: block;
+  width: 235px;
+  line-height: 60px;
+  margin: 0 auto;
+  background-color: variables.$link-button-color;
+  box-shadow: 0 0 6px #1b1310;
+  border-radius: 30px; // 50% of the height to make oval shape
+  text-align: center;
+  color: variables.$text-color-black;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  border: none;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .checkbox-list {
+    display: block;
+  }
+}
